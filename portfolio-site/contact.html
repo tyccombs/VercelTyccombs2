@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio — Contact</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: { "primary": "#1152d4", "background-light": "#f6f6f8", "background-dark": "#101622" },
+        fontFamily: { "display": ["Work Sans"] },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>body { font-family: "Work Sans", sans-serif; }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 px-6 md:px-20 py-5 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
+  <a href="index.html" class="flex items-center gap-4">
+    <div class="text-primary">
+      <svg class="size-8" fill="currentColor" viewBox="0 0 48 48"><path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"/></svg>
+    </div>
+    <span class="text-xl font-bold tracking-tight">S T U D I O</span>
+  </a>
+  <nav class="hidden md:flex items-center gap-9">
+    <a class="hover:text-primary transition-colors text-sm font-medium" href="index.html">Work</a>
+    <a class="hover:text-primary transition-colors text-sm font-medium" href="about.html">About</a>
+    <a class="text-primary text-sm font-medium" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="max-w-5xl mx-auto px-6 md:px-20 py-24">
+  <div class="grid md:grid-cols-2 gap-20">
+    <div>
+      <span class="text-primary font-semibold tracking-widest uppercase text-xs">Get In Touch</span>
+      <h1 class="text-5xl md:text-7xl font-black tracking-tighter mt-4 mb-8 leading-none">Let's make something.</h1>
+      <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-12">We take on a limited number of projects each year. If you have something in mind — reach out early.</p>
+      <div class="space-y-6">
+        <div>
+          <p class="text-slate-500 dark:text-slate-400 uppercase tracking-widest text-xs font-bold mb-1">Email</p>
+          <a href="mailto:hello@studio.film" class="text-xl font-medium hover:text-primary transition-colors">hello@studio.film</a>
+        </div>
+        <div>
+          <p class="text-slate-500 dark:text-slate-400 uppercase tracking-widest text-xs font-bold mb-1">Based In</p>
+          <p class="text-xl font-medium">Los Angeles / Berlin</p>
+        </div>
+        <div class="flex gap-6 pt-4">
+          <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors font-medium" href="#">Instagram</a>
+          <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors font-medium" href="#">Behance</a>
+          <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors font-medium" href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-2">
+        <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Your Name</label>
+        <input type="text" placeholder="Jane Smith" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary transition-colors"/>
+      </div>
+      <div class="flex flex-col gap-2">
+        <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Email</label>
+        <input type="email" placeholder="jane@example.com" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary transition-colors"/>
+      </div>
+      <div class="flex flex-col gap-2">
+        <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Project Type</label>
+        <select class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary transition-colors">
+          <option>Short Film</option>
+          <option>Music Video</option>
+          <option>Commercial</option>
+          <option>Documentary</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="flex flex-col gap-2">
+        <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Message</label>
+        <textarea rows="5" placeholder="Tell us about your project..." class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+      </div>
+      <button class="flex items-center justify-center gap-3 bg-primary text-white py-4 px-8 rounded-full font-bold hover:scale-105 transition-transform">
+        Send Message
+        <span class="material-symbols-outlined">send</span>
+      </button>
+    </div>
+  </div>
+</main>
+
+<footer class="px-6 md:px-20 py-12 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
+  <span class="text-slate-500 dark:text-slate-400 text-sm">© 2024 Portfolio Studio.</span>
+  <div class="flex gap-6">
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="#">Instagram</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="#">Behance</a>
+  </div>
+</footer>
+</body>
+</html>

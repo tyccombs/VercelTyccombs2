@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio — Film Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#1152d4",
+          "background-light": "#f6f6f8",
+          "background-dark": "#101622",
+        },
+        fontFamily: {
+          "display": ["Work Sans"]
+        },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+  body {
+    font-family: "Work Sans", sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  section {
+    scroll-snap-align: start;
+    height: 100vh;
+  }
+  .project-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 25;
+  }
+  /* Ensure buttons inside sections are clickable above the project link */
+  .watch-btn {
+    position: relative;
+    z-index: 30;
+    pointer-events: auto;
+  }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div class="fixed inset-0 pointer-events-none z-[60] opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+  <div class="fixed inset-0 pointer-events-none z-50 bg-radial-gradient from-transparent to-black/40"></div>
+
+  <!-- Fixed Navigation -->
+  <header class="fixed top-0 left-0 w-full z-[70] flex items-center justify-between px-6 md:px-12 py-6 mix-blend-difference">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="text-primary size-6">
+        <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+        </svg>
+      </div>
+      <h2 class="text-white text-xl font-bold tracking-tighter">S T U D I O</h2>
+    </a>
+    <nav class="hidden md:flex items-center gap-12">
+      <a class="text-white hover:text-primary transition-colors tracking-[0.4em] text-[10px] font-medium uppercase" href="index.html">Work</a>
+      <a class="text-white hover:text-primary transition-colors tracking-[0.4em] text-[10px] font-medium uppercase" href="about.html">Studio</a>
+      <a class="text-white hover:text-primary transition-colors tracking-[0.4em] text-[10px] font-medium uppercase" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <button id="menu-btn" class="bg-white/10 backdrop-blur-md p-2 rounded-full text-white hover:bg-primary transition-all">
+        <span class="material-symbols-outlined text-xl">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-[65] bg-background-dark/95 backdrop-blur-lg flex flex-col items-center justify-center gap-10 hidden">
+    <button id="close-menu" class="absolute top-6 right-6 text-white/60 hover:text-white">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="index.html">Work</a>
+    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="about.html">Studio</a>
+    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="contact.html">Contact</a>
+  </div>
+
+  <main class="w-full">
+    <!-- Project 01 — PHOENIX -->
+    <section class="relative group cursor-pointer overflow-hidden">
+      <a href="project-phoenix.html" class="project-link" aria-label="View Phoenix project"></a>
+      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
+      <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQnZNHXyXFN6HLtGh4TQ3KYSeKNN0KUjymkp-thtHU346Gr_7GVM_uuOUnYuePebUdiZsuIffd_SenP3fnRfovHWewBf84nIEviCHcgd3HXYiup5iVk1JkHiZgge3EYNNiOBz-qzCKEMVWJ0qk0GDJEqd_swEMvT5ofzQ69riegplgySLIkjflD0sCCN8_9K6KwEBkKGluBfaVMSMALeNIp2U37acEvK4llikHgyOb852YDJF-6LJFT8UAv4X-yZaWu6ffp9bLUIcu')">
+      </div>
+      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
+        <div class="max-w-4xl">
+          <span class="text-primary font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Director / Cinematography</span>
+          <h2 class="text-white text-5xl md:text-8xl font-light italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">PHOENIX</h2>
+          <div class="h-[1px] w-0 group-hover:w-32 bg-primary transition-all duration-700"></div>
+          <a href="project-phoenix.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
+            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
+            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
+        <span>01</span>
+        <div class="w-12 h-[1px] bg-white/20"></div>
+        <span>04</span>
+      </div>
+    </section>
+
+    <!-- Project 02 — NEXUS -->
+    <section class="relative group cursor-pointer overflow-hidden">
+      <a href="project-nexus.html" class="project-link" aria-label="View Nexus project"></a>
+      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
+      <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4a8usXE4Uqg-fkDI-DS7PfmFesKOTPvQdvrmHnUSQrWqy5h1YUBbtR0oj7u19SI4lTK3GHjUF4b8g-FOUbQL_bGAlc4a8Qq6_LUs0PnBLo4qVbGJwRAVFvkshPrbKA_Y21GUkl4kEJDQ2Ons4e8KYqsfsxQfdMnjQZyGahawmXRhCXI3pYgtlLi82scEWnTOrsjSk8t-G--mGIcvdWVxWhALuaqBzcHpUq-8JN_6X9TPU3S0O2-cQdRmt6UNngu3oAQDN6oHftnaY')">
+      </div>
+      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
+        <div class="max-w-4xl">
+          <span class="text-primary font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Commercial / Fashion</span>
+          <h2 class="text-white text-5xl md:text-8xl font-light italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">NEXUS</h2>
+          <div class="h-[1px] w-0 group-hover:w-32 bg-primary transition-all duration-700"></div>
+          <a href="project-nexus.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
+            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
+            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
+        <span>02</span>
+        <div class="w-12 h-[1px] bg-white/20"></div>
+        <span>04</span>
+      </div>
+    </section>
+
+    <!-- Project 03 — AETHER -->
+    <section class="relative group cursor-pointer overflow-hidden">
+      <a href="project-aether.html" class="project-link" aria-label="View Aether project"></a>
+      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
+      <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1-udYmhkRx4zQ5M4C8PkJAuDFlXCjJSWZ7bkJInWoxBOZ8BEr1rDd9RvhXxLYcsYJpYANEPrpLH9o3NB2eqO7Kwb17eb2-uDf-upDIimBm_sZLQpsGEuhta_3YhmzoYmpNargDC4QlZ2ZGs31HL0ZXmwiVxgVTThNONLOLbijVdEZJrS3mN0Ye-PFCObLH3WQa8-8VS3du5dGSGl0H5zBqUc6DvKracRVPehmYiPPgqXI-hTcBEp4tc-CeaBvt44QRiN2YhJ5vdR6')">
+      </div>
+      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
+        <div class="max-w-4xl">
+          <span class="text-primary font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Music Video / Narrative</span>
+          <h2 class="text-white text-5xl md:text-8xl font-light italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">AETHER</h2>
+          <div class="h-[1px] w-0 group-hover:w-32 bg-primary transition-all duration-700"></div>
+          <a href="project-aether.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
+            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
+            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
+        <span>03</span>
+        <div class="w-12 h-[1px] bg-white/20"></div>
+        <span>04</span>
+      </div>
+    </section>
+
+    <!-- Project 04 — VORTEX -->
+    <section class="relative group cursor-pointer overflow-hidden">
+      <a href="project-vortex.html" class="project-link" aria-label="View Vortex project"></a>
+      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
+      <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPzJDCivg0Aw8aFDmaz_jCuGeAjwndvbRAj8T1OSQ22Zy5oWHU3mKddlFPhegu0ErQMZjtg2qBGNQy0HWauNE1JksoxtbeeBjArFQ4Y2fijX9lWrHyDB_qqorQsyxWDu4RyRpWe-WytcPB7PxZ9OJ8BvoeXbM-OTX3-SACEbVpmbu2LJ0e28QpCHpknqGuMqqytWgPvxic1znBR8wbPFZgbzE9_1E_eV99jgpU-nv54c2HewIueBhEIx8ahY6rRvPEXsMhrqwCLWdw')">
+      </div>
+      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
+        <div class="max-w-4xl">
+          <span class="text-primary font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Documentary / Short Film</span>
+          <h2 class="text-white text-5xl md:text-8xl font-light italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">VORTEX</h2>
+          <div class="h-[1px] w-0 group-hover:w-32 bg-primary transition-all duration-700"></div>
+          <a href="project-vortex.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
+            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
+            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
+        <span>04</span>
+        <div class="w-12 h-[1px] bg-white/20"></div>
+        <span>04</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="fixed bottom-0 left-0 w-full z-40 p-10 flex justify-between items-end pointer-events-none">
+    <div class="pointer-events-auto">
+      <button class="flex items-center gap-3 text-white/60 hover:text-white transition-colors group" onclick="window.scrollBy({top: window.innerHeight, behavior: 'smooth'})">
+        <span class="text-[10px] uppercase tracking-widest font-bold tracking-[0.4em]">Scroll to Explore</span>
+        <span class="material-symbols-outlined text-sm animate-bounce">arrow_downward</span>
+      </button>
+    </div>
+    <div class="pointer-events-auto flex gap-6">
+      <a class="text-white/40 hover:text-primary transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Instagram</a>
+      <a class="text-white/40 hover:text-primary transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Behance</a>
+      <a class="text-white/40 hover:text-primary transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+    closeMenu.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+  </script>
+</body>
+</html>

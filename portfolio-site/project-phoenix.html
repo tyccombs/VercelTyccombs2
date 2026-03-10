@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Phoenix | Studio Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#1152d4",
+          "background-light": "#f6f6f8",
+          "background-dark": "#101622",
+        },
+        fontFamily: { "display": ["Work Sans"] },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: "Work Sans", sans-serif; }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 px-6 md:px-20 py-5 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
+  <a href="index.html" class="flex items-center gap-4">
+    <div class="text-primary">
+      <svg class="size-8" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"/>
+      </svg>
+    </div>
+    <h1 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">S T U D I O</h1>
+  </a>
+  <div class="flex flex-1 justify-end gap-8 items-center">
+    <nav class="hidden md:flex items-center gap-9">
+      <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="index.html">Work</a>
+      <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="about.html">About</a>
+      <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="contact.html">Contact</a>
+    </nav>
+    <a href="index.html" class="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium">
+      <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+      Back to Work
+    </a>
+  </div>
+</header>
+
+<main class="flex flex-col flex-1">
+  <!-- Hero -->
+  <div class="w-full px-4 md:px-20 py-6">
+    <div class="relative w-full aspect-video md:h-[70vh] overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 group cursor-pointer">
+      <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQnZNHXyXFN6HLtGh4TQ3KYSeKNN0KUjymkp-thtHU346Gr_7GVM_uuOUnYuePebUdiZsuIffd_SenP3fnRfovHWewBf84nIEviCHcgd3HXYiup5iVk1JkHiZgge3EYNNiOBz-qzCKEMVWJ0qk0GDJEqd_swEMvT5ofzQ69riegplgySLIkjflD0sCCN8_9K6KwEBkKGluBfaVMSMALeNIp2U37acEvK4llikHgyOb852YDJF-6LJFT8UAv4X-yZaWu6ffp9bLUIcu');"></div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-all duration-500">
+        <button class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold tracking-widest uppercase text-sm hover:bg-primary transition-colors">
+          <span class="material-symbols-outlined text-2xl">play_circle</span>
+          Play Film
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Identity -->
+  <div class="max-w-5xl mx-auto w-full px-4 md:px-20 py-10">
+    <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-2">
+        <span class="text-primary font-semibold tracking-widest uppercase text-xs">Case Study</span>
+        <h1 class="text-slate-900 dark:text-white text-5xl md:text-7xl font-black leading-tight tracking-tighter">Phoenix:<br/>A Story of Rebirth</h1>
+      </div>
+
+      <!-- Credits Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-y border-slate-200 dark:border-slate-800">
+        <div class="flex flex-col gap-1"><p class="text-slate-500 dark:text-slate-400 text-xs uppercase font-bold tracking-widest">Director</p><p class="text-slate-900 dark:text-white text-lg font-medium">Aria Kline</p></div>
+<div class="flex flex-col gap-1"><p class="text-slate-500 dark:text-slate-400 text-xs uppercase font-bold tracking-widest">Cinematography</p><p class="text-slate-900 dark:text-white text-lg font-medium">Marcus Chen</p></div>
+<div class="flex flex-col gap-1"><p class="text-slate-500 dark:text-slate-400 text-xs uppercase font-bold tracking-widest">Editor</p><p class="text-slate-900 dark:text-white text-lg font-medium">Yumi Nakashima</p></div>
+<div class="flex flex-col gap-1"><p class="text-slate-500 dark:text-slate-400 text-xs uppercase font-bold tracking-widest">Studio</p><p class="text-slate-900 dark:text-white text-lg font-medium">Ember Films</p></div>
+      </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="flex flex-col gap-16 py-20">
+      <div class="grid md:grid-cols-12 gap-6 items-start">
+        <h2 class="md:col-span-4 text-slate-900 dark:text-white text-2xl font-bold">The Synopsis</h2>
+        <div class="md:col-span-8">
+          <p class="text-slate-600 dark:text-slate-300 text-xl leading-relaxed">A tale of transformation told through fire and shadow — Phoenix follows a dancer as she reclaims her identity in the aftermath of loss. Shot over 12 nights in an abandoned industrial complex, the film fuses contemporary movement with visceral, raw cinematography.</p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-12 gap-6 items-start">
+        <h2 class="md:col-span-4 text-slate-900 dark:text-white text-2xl font-bold">Director's Note</h2>
+        <div class="md:col-span-8">
+          <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-6">We built the entire visual language around the idea of heat — not just literal flame, but the distortion of memory and the shimmer of things not quite real.</p>
+          <ul class="space-y-4">
+            <li class="flex gap-3 text-slate-600 dark:text-slate-300"><span class="text-primary material-symbols-outlined">movie</span>Captured on location with minimal crew.</li>
+            <li class="flex gap-3 text-slate-600 dark:text-slate-300"><span class="text-primary material-symbols-outlined">movie</span>Practical effects and in-camera techniques throughout.</li>
+            <li class="flex gap-3 text-slate-600 dark:text-slate-300"><span class="text-primary material-symbols-outlined">movie</span>Original score composed specifically for picture.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-12 gap-6 items-start">
+        <h2 class="md:col-span-4 text-slate-900 dark:text-white text-2xl font-bold">The Aesthetic</h2>
+        <div class="md:col-span-8">
+          <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">High-contrast tungsten lighting against pitch black environments. Slow-motion captured at 120fps for the fire sequences. A warm, desaturated palette broken by sudden bursts of amber and red.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <div class="px-4 md:px-20 py-10 space-y-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="rounded-xl overflow-hidden aspect-square bg-slate-200 dark:bg-slate-800">
+        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6KPPejtdjr5qkIjqPFKj-80Sz4oNw2BbW2E66OevcqMrzFKch4uXmPbJLpkWNUK6wpWR82VcB20G_1JmmUvs_T7aV2dakAZN68QGP5R0S-Y12JjCykJCuHuj83YKXrd-8v5aMQkce7KKgFK3YVpKfO-8WNe5Wa-QdsYg7yagbaIqcv6SrCRDnI9CCVtTt1qyrT3g5Zitr8FMAkGQM-kZ-Shvj3X2AAKO4RHxlPAq8-4L2V_bgcwxmRw4sCTKNUoKAK8Zo5XUjbPkB" alt="Still from Phoenix"/>
+      </div>
+      <div class="rounded-xl overflow-hidden aspect-square bg-slate-200 dark:bg-slate-800">
+        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5ggyvy-r_Yx7XLWqKJFGzvFn1MDf7LXy28YCRytQty2WF4gzq-g-xw6wFJVbIOKBC1sSukRorbLKEL3if5_rdXSdqcoLSCeDKKCuOTiXflqnbAFKL3GtUX8P8RQjr5w61S-oZZZ4ehPVkrdH1naN5yWAdzz47paLTCaFY_lxrqNdjRaDxZa5JJkn7VQg1NjGHS2hGwZV9p6yVSPNb5pznvRtDoS4B-0y2n4LoOoGb_erVbECgYc6AsqyV-FPnIoZ13mEHssc-wD-x" alt="Production still"/>
+      </div>
+    </div>
+    <div class="w-full rounded-xl overflow-hidden aspect-[21/9] bg-slate-200 dark:bg-slate-800">
+      <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgSHCzhcBnlHkKqvUrFEI5C080neRhIRG4vaiT7d5OGehMksVZ3HeDOGlqV78MrwtcUe4fckAduhHLRazknTdli2c58wgmGvxuFHaDfWsqTv6k9ePN-1QZOgyZmw4Kq0tMuDuUacULFXCMgQQskEecr9olotGEHwizoAie5MVCnI1cNwjQFlt3f0AZacoAus7gxilMI-aKc8ADthvuRQOlr5vysFoL1loH0t8312HopWfYXYq4csMZ66zPF4Xaq_wfew5TN6jAPzWM" alt="Wide shot"/>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="rounded-xl overflow-hidden aspect-[4/5] bg-slate-200 dark:bg-slate-800">
+        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7h1EJfDUHjo3N7WoUqTDHAWjAvzhGX2DZY0yDs2o9AZUigZtQsiCoilm5jYjZJTpHwlJ__0r1_RQZC_dsWyoqc0WXUPEGBu-eyPZQ9-dgLcin2Jvdl76m6e3m_2ULNCDsiwP97Vtwm-FYcbtUT5tfVi1_lE5_KrENGG01scbBI2n1wYS01ksZVDKzf96oTf1G5XiuU2m2TCoByqVIPjI7lJxAfa1SvRVz_UU7DZjufJ95WMN5BnmfjqmDuwFQorWb_CZ2mtUc7Jvd" alt="Detail shot"/>
+      </div>
+      <div class="rounded-xl overflow-hidden aspect-[4/5] bg-slate-200 dark:bg-slate-800">
+        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE1H7Ockzj84RtsrMScYxB13VRT-YpzfQvfPy5M8nzDt5H05-UceqJ_AyAlARcSzqVnMUvp43-ojNvvTFdcUxiOwAxYSpkv2c1G0zoFPk9sWypGfh0pHGIAnTwQQyvJNQ9v3fYe121PhKbtprNq0CFa60ail1iU7c7d2Dah-vzQqCWF54iDjzZIAEZOf8ldACEThljQrfN_rZdPkK9psQKJSR0mOhtCMAhqIWzwD0uY5U0UVdIw4LRhwurEzRgQcljZqOIgR4abpDk" alt="BTS shot"/>
+      </div>
+      <div class="rounded-xl overflow-hidden aspect-[4/5] bg-slate-200 dark:bg-slate-800">
+        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWPLeRzRrWgb6nfWi9bErAuqh6HuMIRqGsILaIYxxki-ZkcmEXCxYYKVQ5j5msnsFFRexh0FmXYgFNJVb_LHjdc1jTtNoAO1dzzriXfZ4qUTk0e6VZKvhP_8LPN2hhGylEP-F7NFM1UCLi6X6yCG3l0Y4X1IDqsSnXeiuAwGWO6Wlq0yG29mvRgCCYS0unOuXKvvaJAkddjian9ZOruHGwBbyXv1e-zbDyFDYSm8ETaWjnhjXeNVKb5j_cLzPo9slH3xtWf6j2SeHA" alt="Final shot"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next Project -->
+  <div class="w-full px-4 md:px-20 py-32 mt-20 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto text-center flex flex-col items-center gap-8">
+      <p class="text-slate-500 dark:text-slate-400 uppercase tracking-[0.3em] font-bold text-sm">Next Project</p>
+      <a class="group block" href="project-nexus.html">
+        <h3 class="text-slate-900 dark:text-white text-5xl md:text-8xl font-black transition-all group-hover:text-primary">Nexus: Commercial Film</h3>
+      </a>
+      <a class="flex items-center gap-4 py-4 px-8 bg-primary text-white rounded-full font-bold hover:scale-105 transition-transform" href="project-nexus.html">
+        View Case Study
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="px-6 md:px-20 py-12 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-8">
+  <div class="flex items-center gap-4 text-slate-500 dark:text-slate-400 text-sm">
+    <span>© 2024 Portfolio Studio. All rights reserved.</span>
+  </div>
+  <div class="flex items-center gap-8">
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Instagram</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Behance</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">LinkedIn</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Twitter</a>
+  </div>
+</footer>
+
+</div>
+</div>
+</body>
+</html>
