@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio — Film Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#1152d4",
+          "background-light": "#f6f6f8",
+          "background-dark": "#101622",
+        },
+        fontFamily: {
+          "display": ["Work Sans"]
+        },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+  body {
+    font-family: "Work Sans", sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  section {
+    scroll-snap-align: start;
+    height: 100vh;
+  }
+  .project-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 25;
+  }
+  /* Ensure buttons inside sections are clickable above the project link */
+  .watch-btn {
+    position: relative;
+    z-index: 30;
+    pointer-events: auto;
+  }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div class="fixed inset-0 pointer-events-none z-[60] opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+  <div class="fixed inset-0 pointer-events-none z-50 bg-radial-gradient from-transparent to-black/40"></div>
+
+  <!-- Fixed Navigation -->
+  <header class="fixed top-0 left-0 w-full z-[70] flex items-center justify-between px-6 md:px-12 py-6 mix-blend-difference">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="Ouchpictures_v3crop.png" alt="Ouch! Film Club" class="h-8 w-auto" style="filter: invert(1);"/>
+    </a>
+    <nav class="hidden md:flex items-center gap-12">
+      <a class="text-white hover:text-primary transition-colors tracking-[0.4em] text-[10px] font-medium uppercase" href="index.html">Work</a>
+      <a class="text-white hover:text-primary transition-colors tracking-[0.4em] text-[10px] font-medium uppercase" href="about.html">Studio</a>
+      <a class="text-white hover:text-primary transition-colors tracking-[0.4em] text-[10px] font-medium uppercase" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <button id="menu-btn" class="bg-white/10 backdrop-blur-md p-2 rounded-full text-white hover:bg-primary transition-all">
+        <span class="material-symbols-outlined text-xl">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-[65] bg-background-dark/95 backdrop-blur-lg flex flex-col items-center justify-center gap-10 hidden">
+    <button id="close-menu" class="absolute top-6 right-6 text-white/60 hover:text-white">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="index.html">Work</a>
+    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="about.html">Studio</a>
+    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:text-primary transition-colors" href="contact.html">Contact</a>
+  </div>
+
+  <main class="w-full">
+    <!-- Project 01 — PHOENIX -->
+    <section class="relative group cursor-pointer overflow-hidden">
+      <a href="project-phoenix.html" class="project-link" aria-label="View Phoenix project"></a>
+      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
+      <img src="https://www.dropbox.com/scl/fi/mxuav4zjoqwle6gfa8wlq/Ty_reel.gif?rlkey=zl1tj0s6vplf0x6y9r3k3iute&raw=1" alt="Phoenix" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
+      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
+        <div class="max-w-4xl">
+          <span class="text-primary font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Director / Cinematographer</span>
+          <h2 class="text-white text-5xl md:text-8xl font-light italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">WHO THE HELL IS TY COMBS?</h2>
+          <div class="h-[1px] w-0 group-hover:w-32 bg-primary transition-all duration-700"></div>
+          <a href="project-phoenix.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
+            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
+            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
+        <span>01</span>
+        <div class="w-12 h-[1px] bg-white/20"></div>
+        <span>04</span>
+      </div>
+    </section>
+
+    <!-- Project 02 — NEXUS -->
+    <section class="relative group cursor-pointer overflow-hidden">
+      <a href="project-nexus.html" class="project-link" aria-label="View Nexus project"></a>
+      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
+      <img src="https://www.dropbox.com/scl/fi/3ix6mwkk5appvxczad9kn/SocialCuts-2.gif?rlkey=96mwobpgff3r2engzbwel3sag&raw=1" alt="Nexus" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
+      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
+        <div class="max-w-4xl">
+          <span class="text-primary font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">EDGEHILL | Live Session</span>
+          <h2 class="text-white text-5xl md:text-8xl font-light italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">LIVE FROM THE GREYHOUSE</h2>
+          <div class="h-[1px] w-0 group-hover:w-32 bg-primary transition-all duration-700"></div>
+          <a href="project-nexus.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
+            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
+            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
+        <span>02</span>
+        <div class="w-12 h-[1px] bg-white/20"></div>
+        <span>04</span>
+      </div>
+    </section>
+
+    <!-- Project 03 — AETHER -->
+    <section class="relative group cursor-pointer overflow-hidden">
+      <a href="project-aether.html" class="project-link" aria-label="View Aether project"></a>
+      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
+      <img src="https://www.dropbox.com/scl/fi/zmz7op3g4qj9u946owe3b/M10.gif?rlkey=jbkssazdtkgbf17wim4rxcmul&raw=1" alt="Aether" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
+      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
+        <div class="max-w-4xl">
+          <span class="text-primary font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Mitchell Tenpenny | Music Video</span>
+          <h2 class="text-white text-5xl md:text-8xl font-light italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">THERAPY</h2>
+          <div class="h-[1px] w-0 group-hover:w-32 bg-primary transition-all duration-700"></div>
+          <a href="project-aether.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
+            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
+            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
+        <span>03</span>
+        <div class="w-12 h-[1px] bg-white/20"></div>
+        <span>04</span>
+      </div>
+    </section>
+
+    <!-- Project 04 — VORTEX -->
+    <section class="relative group cursor-pointer overflow-hidden">
+      <a href="project-vortex.html" class="project-link" aria-label="View Vortex project"></a>
+      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
+      <img src="https://www.dropbox.com/scl/fi/jd8jbqa0ssbnzf5hutz6e/Doc_v1.gif?rlkey=tnh7lk4bw9k4x2p17y7im5j7h&raw=1" alt="Vortex" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
+      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
+        <div class="max-w-4xl">
+          <span class="text-primary font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Documentary / Short Film</span>
+          <h2 class="text-white text-5xl md:text-8xl font-light italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">THE MOVIE THAT CHANGED EVERYTHING</h2>
+          <div class="h-[1px] w-0 group-hover:w-32 bg-primary transition-all duration-700"></div>
+          <a href="project-vortex.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
+            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
+            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
+        <span>04</span>
+        <div class="w-12 h-[1px] bg-white/20"></div>
+        <span>04</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="fixed bottom-0 left-0 w-full z-40 p-10 flex justify-between items-end pointer-events-none">
+    <div class="pointer-events-auto">
+      <button class="flex items-center gap-3 text-white/60 hover:text-white transition-colors group" onclick="window.scrollBy({top: window.innerHeight, behavior: 'smooth'})">
+        <span class="text-[10px] uppercase tracking-widest font-bold tracking-[0.4em]">Scroll to Explore</span>
+        <span class="material-symbols-outlined text-sm animate-bounce">arrow_downward</span>
+      </button>
+    </div>
+    <div class="pointer-events-auto flex gap-6">
+      <a class="text-white/40 hover:text-primary transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Instagram</a>
+      <a class="text-white/40 hover:text-primary transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Behance</a>
+      <a class="text-white/40 hover:text-primary transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+    closeMenu.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+  </script>
+</body>
+</html>
