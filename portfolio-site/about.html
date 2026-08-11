@@ -5,7 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Studio — About</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
   tailwind.config = {
@@ -19,7 +19,10 @@
     },
   }
 </script>
-<style>body { font-family: "Work Sans", sans-serif; }</style>
+<style>
+body { font-family: "Work Sans", sans-serif; }
+h1, h2, h3 { font-family: "Archivo Black", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; text-transform: uppercase; }
+</style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
 <!-- Fixed Navigation -->
@@ -53,7 +56,7 @@
   <div class="grid md:grid-cols-2 gap-16 items-center">
     <div>
       <span class="text-slate-400 font-semibold tracking-widest uppercase text-xs">About the Studio</span>
-      <h1 class="text-5xl md:text-7xl font-black tracking-tighter mt-4 mb-8 leading-none">We make films that matter.</h1>
+      <h1 class="text-5xl md:text-7xl tracking-tighter mt-4 mb-8 leading-none">We make films that matter.</h1>
       <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">Studio is an independent film collective based between Los Angeles and Berlin. We specialise in narrative shorts, music videos, and commercial work for brands that value craft over convention.</p>
     </div>
     <div class="rounded-2xl overflow-hidden aspect-square bg-slate-200 dark:bg-slate-800">
