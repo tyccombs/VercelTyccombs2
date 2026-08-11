@@ -12,7 +12,7 @@
     darkMode: "class",
     theme: {
       extend: {
-        colors: { "primary": "#1152d4", "background-light": "#f6f6f8", "background-dark": "#101622" },
+        colors: { "primary": "#171819", "background-light": "#efefef", "background-dark": "#171819" },
         fontFamily: { "display": ["Work Sans"] },
         borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
       },
@@ -52,22 +52,22 @@
 <main class="max-w-5xl mx-auto px-6 md:px-20 py-24">
   <div class="grid md:grid-cols-2 gap-20">
     <div>
-      <span class="text-primary font-semibold tracking-widest uppercase text-xs">Get In Touch</span>
+      <span class="text-slate-400 font-semibold tracking-widest uppercase text-xs">Get In Touch</span>
       <h1 class="text-5xl md:text-7xl font-black tracking-tighter mt-4 mb-8 leading-none">Let's make something.</h1>
       <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-12">We take on a limited number of projects each year. If you have something in mind — reach out early.</p>
       <div class="space-y-6">
         <div>
           <p class="text-slate-500 dark:text-slate-400 uppercase tracking-widest text-xs font-bold mb-1">Email</p>
-          <a href="mailto:hello@studio.film" class="text-xl font-medium hover:text-primary transition-colors">hello@studio.film</a>
+          <a href="mailto:hello@studio.film" class="text-xl font-medium hover:opacity-60 transition-opacity">hello@studio.film</a>
         </div>
         <div>
           <p class="text-slate-500 dark:text-slate-400 uppercase tracking-widest text-xs font-bold mb-1">Based In</p>
           <p class="text-xl font-medium">Los Angeles / Berlin</p>
         </div>
         <div class="flex gap-6 pt-4">
-          <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors font-medium" href="#">Instagram</a>
-          <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors font-medium" href="#">Behance</a>
-          <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors font-medium" href="#">LinkedIn</a>
+          <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors font-medium" href="#">Instagram</a>
+          <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors font-medium" href="#">Behance</a>
+          <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors font-medium" href="#">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -75,15 +75,15 @@
     <div class="flex flex-col gap-6">
       <div class="flex flex-col gap-2">
         <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Your Name</label>
-        <input type="text" placeholder="Jane Smith" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary transition-colors"/>
+        <input type="text" placeholder="Jane Smith" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-slate-400 transition-colors"/>
       </div>
       <div class="flex flex-col gap-2">
         <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Email</label>
-        <input type="email" placeholder="jane@example.com" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary transition-colors"/>
+        <input type="email" placeholder="jane@example.com" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-slate-400 transition-colors"/>
       </div>
       <div class="flex flex-col gap-2">
         <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Project Type</label>
-        <select class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary transition-colors">
+        <select class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-slate-400 transition-colors">
           <option>Short Film</option>
           <option>Music Video</option>
           <option>Commercial</option>
@@ -93,9 +93,9 @@
       </div>
       <div class="flex flex-col gap-2">
         <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Message</label>
-        <textarea rows="5" placeholder="Tell us about your project..." class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+        <textarea rows="5" placeholder="Tell us about your project..." class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-slate-400 transition-colors resize-none"></textarea>
       </div>
-      <button class="flex items-center justify-center gap-3 bg-primary text-white py-4 px-8 rounded-full font-bold hover:scale-105 transition-transform">
+      <button class="flex items-center justify-center gap-3 bg-[#efefef] text-[#171819] py-4 px-8 rounded-full font-bold hover:scale-105 transition-transform">
         Send Message
         <span class="material-symbols-outlined">send</span>
       </button>
@@ -106,8 +106,8 @@
 <footer class="px-6 md:px-20 py-12 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
   <span class="text-slate-500 dark:text-slate-400 text-sm">© 2024 Portfolio Studio.</span>
   <div class="flex gap-6">
-    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="#">Instagram</a>
-    <a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="#">Behance</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors text-sm" href="#">Instagram</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors text-sm" href="#">Behance</a>
   </div>
 </footer>
 <script>
