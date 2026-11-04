@@ -153,8 +153,7 @@
       "to-each-their-own-5.jpg",
       "to-each-their-own-6.jpg"
     ],
-    "clip": "to-each-their-own.mp4",
-    "clipFromStills": true
+    "clip": "to-each-their-own.mp4"
   },
   {
     "slug": "meeks-carter",
@@ -175,6 +174,20 @@
     "credits": [],
     "stills": [],
     "clip": "dogpark-cako.mp4"
+  },
+  {
+    "slug": "lonesome-joy-stargo",
+    "artist": "Lonesome Joy",
+    "title": "Live from Stargo",
+    "type": "Live",
+    "youtube": "TYuqnxUGIHk",
+    "clip": "lonesome-joy-stargo.mp4",
+    "credits": [],
+    "link": [
+      "Watch all the Stargo Sessions",
+      "https://www.youtube.com/playlist?list=PLpGC5vyZYKT9Ayq8c8xZR6xP6IUAOq1HT"
+    ],
+    "stills": []
   },
   {
     "slug": "stephen-stanley",
@@ -227,8 +240,7 @@
       "desperate-4.jpg",
       "desperate-5.jpg"
     ],
-    "clip": "desperate.mp4",
-    "clipFromStills": true
+    "clip": "desperate.mp4"
   },
   {
     "slug": "its-on-me",
@@ -293,8 +305,7 @@
       "sinner-5.jpg",
       "sinner-6.jpg"
     ],
-    "clip": "sinner.mp4",
-    "clipFromStills": true
+    "clip": "sinner.mp4"
   },
   {
     "slug": "american-spirit",
