@@ -156,7 +156,9 @@
       "to-each-their-own-5.jpg",
       "to-each-their-own-6.jpg"
     ],
-    "noEmbed": true
+    "noEmbed": true,
+    "clip": "to-each-their-own.mp4",
+    "clipFromStills": true
   },
   {
     "slug": "meeks-carter",
@@ -233,7 +235,9 @@
       "desperate-4.jpg",
       "desperate-5.jpg"
     ],
-    "noEmbed": true
+    "noEmbed": true,
+    "clip": "desperate.mp4",
+    "clipFromStills": true
   },
   {
     "slug": "its-on-me",
@@ -258,7 +262,9 @@
       "its-on-me-4.jpg",
       "its-on-me-5.jpg",
       "its-on-me-6.jpg"
-    ]
+    ],
+    "clip": "its-on-me.mp4",
+    "clipFromStills": true
   },
   {
     "slug": "sinner",
@@ -296,7 +302,9 @@
       "sinner-5.jpg",
       "sinner-6.jpg"
     ],
-    "noEmbed": true
+    "noEmbed": true,
+    "clip": "sinner.mp4",
+    "clipFromStills": true
   },
   {
     "slug": "american-spirit",
@@ -337,7 +345,9 @@
       "american-spirit-4.jpg",
       "american-spirit-5.jpg",
       "american-spirit-6.jpg"
-    ]
+    ],
+    "clip": "american-spirit.mp4",
+    "clipFromStills": true
   },
   {
     "slug": "flatiron-health",
@@ -367,7 +377,9 @@
       "flatiron-health-2.jpg",
       "flatiron-health-3.jpg",
       "flatiron-health-4.jpg"
-    ]
+    ],
+    "clip": "flatiron-health.mp4",
+    "clipFromStills": true
   },
   {
     "slug": "sway-social",
@@ -427,7 +439,9 @@
       "gonna-be-okay-5.jpg",
       "gonna-be-okay-6.jpg"
     ],
-    "noEmbed": true
+    "noEmbed": true,
+    "clip": "gonna-be-okay.mp4",
+    "clipFromStills": true
   },
   {
     "slug": "canyoufeelit",
@@ -442,6 +456,8 @@
       "canyoufeelit-2.jpg",
       "canyoufeelit-3.jpg",
       "canyoufeelit-4.jpg"
-    ]
+    ],
+    "clip": "canyoufeelit.mp4",
+    "clipFromStills": true
   }
 ]
