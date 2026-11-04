@@ -1,204 +1,398 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Studio — Film Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "primary": "#171819",
-          "background-light": "#efefef",
-          "background-dark": "#171819",
-        },
-        fontFamily: {
-          "display": ["Work Sans"]
-        },
-        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-      },
-    },
-  }
-</script>
-<style>
-h1, h2, h3 { font-family: "Archivo Black", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; text-transform: uppercase; }
-  body {
-    font-family: "Work Sans", sans-serif;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-  }
-  section {
-    scroll-snap-align: start;
-    height: 100vh;
-  }
-  .project-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    z-index: 25;
-  }
-  /* Ensure buttons inside sections are clickable above the project link */
-  .watch-btn {
-    position: relative;
-    z-index: 30;
-    pointer-events: auto;
-  }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ouch Pictures | Films by Ty Combs</title>
+<meta name="description" content="Ouch Pictures: music videos, short films, documentaries and commercials by Ty Combs.">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/jukebox.css">
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
-  <div class="fixed inset-0 pointer-events-none z-[60] opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
-  <div class="fixed inset-0 pointer-events-none z-50 bg-radial-gradient from-transparent to-black/40"></div>
-
-  <!-- Fixed Navigation -->
-  <header class="fixed top-0 left-0 w-full z-[70] flex items-center justify-between px-6 md:px-12 py-6 mix-blend-difference">
-    <a href="index.html" class="flex items-center gap-2">
-      <img src="Ouchpictures_v3crop.png" alt="Ouch! Film Club" class="h-8 w-auto" style="filter: invert(1);"/>
-    </a>
-    <nav class="hidden md:flex items-center gap-12">
-      <a class="text-white hover:opacity-60 transition-opacity tracking-[0.4em] text-[10px] font-medium uppercase" href="index.html">Work</a>
-      <a class="text-white hover:opacity-60 transition-opacity tracking-[0.4em] text-[10px] font-medium uppercase" href="about.html">Studio</a>
-      <a class="text-white hover:opacity-60 transition-opacity tracking-[0.4em] text-[10px] font-medium uppercase" href="contact.html">Contact</a>
-    </nav>
-    <div class="flex items-center gap-4">
-      <button id="menu-btn" class="bg-white/10 backdrop-blur-md p-2 rounded-full text-white hover:bg-white/20 transition-all">
-        <span class="material-symbols-outlined text-xl">menu</span>
-      </button>
+<body class="home">
+<header class="site-head">
+  <a href="index.html" class="site-logo" aria-label="Ouch Pictures, home"><img src="Ouchpictures_white.png" alt="Ouch!"></a>
+  <nav>
+    <a href="index.html#work">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="jb-scroll" data-jukebox data-count="18">
+<span class="jb-anchor" id="work"></span>
+<div class="jb">
+  <div class="jb-reel">
+    <div class="jb-face jb-front">
+      <video src="assets/clips/reel.mp4" poster="assets/thumbs/reel-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video>
     </div>
-  </header>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-0 z-[65] bg-black/95 backdrop-blur-lg flex flex-col items-center justify-center gap-10 hidden">
-    <button id="close-menu" class="absolute top-6 right-6 text-white/60 hover:text-white">
-      <span class="material-symbols-outlined text-3xl">close</span>
-    </button>
-    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:opacity-60 transition-opacity" href="index.html">Work</a>
-    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:opacity-60 transition-opacity" href="about.html">Studio</a>
-    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:opacity-60 transition-opacity" href="contact.html">Contact</a>
+    <div class="jb-face jb-back"></div>
   </div>
-
-  <main class="w-full">
-    <!-- Project 01 — PHOENIX -->
-    <section class="relative group cursor-pointer overflow-hidden">
-      <a href="project-phoenix.html" class="project-link" aria-label="View Phoenix project"></a>
-      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
-      <img src="https://www.dropbox.com/scl/fi/mxuav4zjoqwle6gfa8wlq/Ty_reel.gif?rlkey=zl1tj0s6vplf0x6y9r3k3iute&raw=1" alt="Phoenix" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
-      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
-        <div class="max-w-4xl">
-          <span class="text-white font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Director / Cinematographer</span>
-          <h2 class="text-white text-5xl md:text-8xl italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">WHO THE HELL IS TY COMBS?</h2>
-          <div class="h-[1px] w-0 group-hover:w-32 bg-white transition-all duration-700"></div>
-          <a href="project-phoenix.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
-            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
-            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
-          </a>
+  <h1 class="hero-mark"><img src="Ouchpictures_white.png" alt="Ouch!"></h1>
+  <span class="mark tl"><i></i>Ouch Pictures</span>
+  <span class="mark tr"><i></i>Films by Ty Combs</span>
+  <span class="mark bl"><i></i>(18) Projects</span>
+  <span class="mark br"><i></i>Scroll</span>
+  <div class="jb-body">
+    <div class="jb-stage">
+      <a class="jb-card" href="work/greyhouse.html" data-title="Live from the Greyhouse" data-artist="Edgehill" data-type="Live" data-clip="assets/clips/greyhouse.mp4" aria-label="Open Edgehill 'Live from the Greyhouse'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/greyhouse.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed and produced by</dt><dd>Ty Combs</dd></div><div><dt>Director of photography</dt><dd>Mitchell Schleper</dd></div><div><dt>Label</dt><dd>Big Loud Rock</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
         </div>
-      </div>
-      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
-        <span>01</span>
-        <div class="w-12 h-[1px] bg-white/20"></div>
-        <span>04</span>
-      </div>
-    </section>
-
-    <!-- Project 02 — NEXUS -->
-    <section class="relative group cursor-pointer overflow-hidden">
-      <a href="project-nexus.html" class="project-link" aria-label="View Nexus project"></a>
-      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
-      <img src="https://www.dropbox.com/scl/fi/3ix6mwkk5appvxczad9kn/SocialCuts-2.gif?rlkey=96mwobpgff3r2engzbwel3sag&raw=1" alt="Nexus" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
-      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
-        <div class="max-w-4xl">
-          <span class="text-white font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">EDGEHILL | Live Session</span>
-          <h2 class="text-white text-5xl md:text-8xl italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">LIVE FROM THE GREYHOUSE</h2>
-          <div class="h-[1px] w-0 group-hover:w-32 bg-white transition-all duration-700"></div>
-          <a href="project-nexus.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
-            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
-            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
-          </a>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/therapy.html" data-title="Therapy" data-artist="Mitchell Tenpenny" data-type="Music Video" data-clip="assets/clips/therapy.mp4" aria-label="Open Mitchell Tenpenny 'Therapy'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/therapy.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed by</dt><dd>Ty Combs</dd></div><div><dt>Director of photography</dt><dd>Mitchell Schleper</dd></div><div><dt>Produced by</dt><dd>Josh Barry, Ty Combs</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
         </div>
-      </div>
-      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
-        <span>02</span>
-        <div class="w-12 h-[1px] bg-white/20"></div>
-        <span>04</span>
-      </div>
-    </section>
-
-    <!-- Project 03 — AETHER -->
-    <section class="relative group cursor-pointer overflow-hidden">
-      <a href="project-aether.html" class="project-link" aria-label="View Aether project"></a>
-      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
-      <img src="https://www.dropbox.com/scl/fi/zmz7op3g4qj9u946owe3b/M10.gif?rlkey=jbkssazdtkgbf17wim4rxcmul&raw=1" alt="Aether" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
-      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
-        <div class="max-w-4xl">
-          <span class="text-white font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Mitchell Tenpenny | Music Video</span>
-          <h2 class="text-white text-5xl md:text-8xl italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">THERAPY</h2>
-          <div class="h-[1px] w-0 group-hover:w-32 bg-white transition-all duration-700"></div>
-          <a href="project-aether.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
-            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
-            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
-          </a>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/mccoy-moore.html" data-title="Forget We Ever Met" data-artist="McCoy Moore" data-type="Music Video" data-clip="assets/clips/mccoy-moore.mp4" aria-label="Open McCoy Moore 'Forget We Ever Met'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/mccoy-moore.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <span></span>
+            <span class="jb-open">View project</span>
+          </div>
         </div>
-      </div>
-      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
-        <span>03</span>
-        <div class="w-12 h-[1px] bg-white/20"></div>
-        <span>04</span>
-      </div>
-    </section>
-
-    <!-- Project 04 — VORTEX -->
-    <section class="relative group cursor-pointer overflow-hidden">
-      <a href="project-vortex.html" class="project-link" aria-label="View Vortex project"></a>
-      <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-700"></div>
-      <img src="https://www.dropbox.com/scl/fi/jd8jbqa0ssbnzf5hutz6e/Doc_v1.gif?rlkey=tnh7lk4bw9k4x2p17y7im5j7h&raw=1" alt="Vortex" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
-      <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-20 pointer-events-none">
-        <div class="max-w-4xl">
-          <span class="text-white font-medium tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">Documentary / Short Film</span>
-          <h2 class="text-white text-5xl md:text-8xl italic tracking-[-0.05em] scale-y-110 origin-left mb-6 leading-none">THE MOVIE THAT CHANGED EVERYTHING</h2>
-          <div class="h-[1px] w-0 group-hover:w-32 bg-white transition-all duration-700"></div>
-          <a href="project-vortex.html" class="watch-btn mt-8 inline-flex items-center gap-4 text-white/80 hover:text-white transition-all opacity-0 group-hover:opacity-100 duration-700">
-            <span class="material-symbols-outlined text-4xl font-light">play_circle</span>
-            <span class="text-[10px] uppercase tracking-[0.3em] font-bold">Watch Film</span>
-          </a>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/dogpark-famous.html" data-title="I Wanna Be Famous" data-artist="Dogpark" data-type="Music Video" data-clip="assets/clips/dogpark-famous.mp4" aria-label="Open Dogpark 'I Wanna Be Famous'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/dogpark-famous.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <span></span>
+            <span class="jb-open">View project</span>
+          </div>
         </div>
-      </div>
-      <div class="absolute bottom-8 right-8 z-30 flex items-center gap-4 text-white/50 text-xs font-medium tracking-widest pointer-events-none">
-        <span>04</span>
-        <div class="w-12 h-[1px] bg-white/20"></div>
-        <span>04</span>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="fixed bottom-0 left-0 w-full z-40 p-10 flex justify-between items-end pointer-events-none">
-    <div class="pointer-events-auto">
-      <button class="flex items-center gap-3 text-white/60 hover:text-white transition-colors group" onclick="window.scrollBy({top: window.innerHeight, behavior: 'smooth'})">
-        <span class="text-[10px] uppercase tracking-widest font-bold tracking-[0.4em]">Scroll to Explore</span>
-        <span class="material-symbols-outlined text-sm animate-bounce">arrow_downward</span>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/movie-changed-everything.html" data-title="The Movie That Changed Everything" data-artist="" data-type="Documentary" data-clip="assets/clips/movie-changed-everything.mp4" aria-label="Open The Movie That Changed Everything" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/movie-changed-everything.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed by</dt><dd>Ty Combs</dd></div><div><dt>Cinematography</dt><dd>Ty Combs</dd></div><div><dt>Selection</dt><dd>Dance of Cinema Film Festival, 2024</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/to-each-their-own.html" data-title="To Each Their Own" data-artist="Colby!" data-type="Music Video" aria-label="Open Colby! 'To Each Their Own'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/to-each-their-own.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed and produced by</dt><dd>Ty Combs</dd></div><div><dt>Director of photography</dt><dd>Mitchell Schleper</dd></div><div><dt>On-set stills</dt><dd>Gina Di Maio</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/meeks-carter.html" data-title="Something to Believe In" data-artist="Meeks Carter" data-type="Music Video" data-clip="assets/clips/meeks-carter.mp4" aria-label="Open Meeks Carter 'Something to Believe In'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/meeks-carter.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <span></span>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/dogpark-cako.html" data-title="Live from Cako Studios" data-artist="Dogpark" data-type="Live" data-clip="assets/clips/dogpark-cako.mp4" aria-label="Open Dogpark 'Live from Cako Studios'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/dogpark-cako.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <span></span>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/stephen-stanley.html" data-title="Never Mine" data-artist="Stephen Stanley" data-type="Lyric Video" data-clip="assets/clips/stephen-stanley.mp4" aria-label="Open Stephen Stanley 'Never Mine'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/stephen-stanley.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <span></span>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/stephen-stanley-change.html" data-title="Change" data-artist="Stephen Stanley" data-type="Music Video" data-clip="assets/clips/stephen-stanley-change.mp4" aria-label="Open Stephen Stanley 'Change'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/stephen-stanley-change.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <span></span>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/desperate.html" data-title="Desperate" data-artist="Jamie MacDonald" data-type="Music Video" aria-label="Open Jamie MacDonald 'Desperate'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/desperate.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed by</dt><dd>Ty Combs</dd></div><div><dt>Produced by</dt><dd>Ty Combs, Paul Rivera, Aaron Stearns</dd></div><div><dt>Director of photography</dt><dd>Ty Combs</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/its-on-me.html" data-title="It's on Me" data-artist="Ashley Walls &amp; Struggle Jennings" data-type="Music Video" aria-label="Open Ashley Walls &amp; Struggle Jennings 'It's on Me'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/its-on-me.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed and shot by</dt><dd>Ty Combs</dd></div><div><dt>Produced by</dt><dd>Ty Combs, Ashley Walls</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/sinner.html" data-title="Sinner" data-artist="Shaya Zamora" data-type="Music Video" aria-label="Open Shaya Zamora 'Sinner'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/sinner.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed and produced by</dt><dd>Ty Combs</dd></div><div><dt>Director of photography</dt><dd>Mitchell Schleper</dd></div><div><dt>Costuming</dt><dd>Meleah Honeycutt</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/american-spirit.html" data-title="American Spirit" data-artist="John Louis" data-type="Music Video" aria-label="Open John Louis 'American Spirit'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/american-spirit.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed by</dt><dd>Ty Combs, Benjamin Mariano</dd></div><div><dt>Director of photography</dt><dd>Ty Combs</dd></div><div><dt>Editor</dt><dd>Benjamin Mariano</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/flatiron-health.html" data-title="Flatiron Health" data-artist="BBC StoryWorks" data-type="Commercial" aria-label="Open BBC StoryWorks 'Flatiron Health'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/flatiron-health.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed by</dt><dd>Ty Combs</dd></div><div><dt>Editor</dt><dd>Ty Combs</dd></div><div><dt>Produced by</dt><dd>Goodfellow Productions for BBC StoryWorks and Flatiron Health</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/sway-social.html" data-title="Intro to Affiliate Marketing" data-artist="Sway Social" data-type="Commercial" data-clip="assets/clips/sway-social.mp4" aria-label="Open Sway Social 'Intro to Affiliate Marketing'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/sway-social.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed by</dt><dd>Ty Combs</dd></div><div><dt>Written by</dt><dd>Monica Combs</dd></div><div><dt>Produced by</dt><dd>Sway Social</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/gonna-be-okay.html" data-title="I'm Gonna Be Okay" data-artist="Abby Siler" data-type="Music Video" aria-label="Open Abby Siler 'I'm Gonna Be Okay'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/gonna-be-okay.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <dl><div><dt>Directed by</dt><dd>Ty Combs</dd></div><div><dt>Director of photography</dt><dd>Mitchell Schleper</dd></div><div><dt>Produced by</dt><dd>Ryan Smith, Ross King, Ty Combs</dd></div></dl>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+      <a class="jb-card" href="work/canyoufeelit.html" data-title="CANYOUFEELIT" data-artist="Drew Elliott" data-type="Lyric Video" aria-label="Open Drew Elliott 'CANYOUFEELIT'" tabindex="-1">
+        <div class="jb-face jb-front">
+          <img src="assets/thumbs/canyoufeelit.jpg" alt="" decoding="async">
+          <div class="jb-info">
+            <span></span>
+            <span class="jb-open">View project</span>
+          </div>
+        </div>
+        <div class="jb-face jb-back"></div>
+      </a>
+    </div>
+    <div class="jb-row" role="group" aria-label="Projects">
+      <button type="button" class="jb-spine" aria-label="Edgehill 'Live from the Greyhouse'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/greyhouse.jpg" alt="" decoding="async">
+          <b>01</b>
+          <span class="jb-text"><i>Edgehill</i><strong>Live from the</strong><strong>Greyhouse</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Mitchell Tenpenny 'Therapy'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/therapy.jpg" alt="" decoding="async">
+          <b>02</b>
+          <span class="jb-text"><i>Mitchell Tenpenny</i><strong>Therapy</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="McCoy Moore 'Forget We Ever Met'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/mccoy-moore.jpg" alt="" decoding="async">
+          <b>03</b>
+          <span class="jb-text"><i>McCoy Moore</i><strong>Forget We Ever Met</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Dogpark 'I Wanna Be Famous'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/dogpark-famous.jpg" alt="" decoding="async">
+          <b>04</b>
+          <span class="jb-text"><i>Dogpark</i><strong>I Wanna Be Famous</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="The Movie That Changed Everything">
+        <span class="jb-plate">
+          <img src="assets/thumbs/movie-changed-everything.jpg" alt="" decoding="async">
+          <b>05</b>
+          <span class="jb-text"><strong>The Movie That</strong><strong>Changed Everything</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Colby! 'To Each Their Own'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/to-each-their-own.jpg" alt="" decoding="async">
+          <b>06</b>
+          <span class="jb-text"><i>Colby!</i><strong>To Each Their Own</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Meeks Carter 'Something to Believe In'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/meeks-carter.jpg" alt="" decoding="async">
+          <b>07</b>
+          <span class="jb-text"><i>Meeks Carter</i><strong>Something to</strong><strong>Believe In</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Dogpark 'Live from Cako Studios'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/dogpark-cako.jpg" alt="" decoding="async">
+          <b>08</b>
+          <span class="jb-text"><i>Dogpark</i><strong>Live from Cako</strong><strong>Studios</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Stephen Stanley 'Never Mine'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/stephen-stanley.jpg" alt="" decoding="async">
+          <b>09</b>
+          <span class="jb-text"><i>Stephen Stanley</i><strong>Never Mine</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Stephen Stanley 'Change'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/stephen-stanley-change.jpg" alt="" decoding="async">
+          <b>10</b>
+          <span class="jb-text"><i>Stephen Stanley</i><strong>Change</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Jamie MacDonald 'Desperate'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/desperate.jpg" alt="" decoding="async">
+          <b>11</b>
+          <span class="jb-text"><i>Jamie MacDonald</i><strong>Desperate</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Ashley Walls &amp; Struggle Jennings 'It's on Me'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/its-on-me.jpg" alt="" decoding="async">
+          <b>12</b>
+          <span class="jb-text"><i>Ashley Walls &amp;</i><i>Struggle Jennings</i><strong>It's on Me</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Shaya Zamora 'Sinner'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/sinner.jpg" alt="" decoding="async">
+          <b>13</b>
+          <span class="jb-text"><i>Shaya Zamora</i><strong>Sinner</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="John Louis 'American Spirit'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/american-spirit.jpg" alt="" decoding="async">
+          <b>14</b>
+          <span class="jb-text"><i>John Louis</i><strong>American Spirit</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="BBC StoryWorks 'Flatiron Health'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/flatiron-health.jpg" alt="" decoding="async">
+          <b>15</b>
+          <span class="jb-text"><i>BBC StoryWorks</i><strong>Flatiron Health</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Sway Social 'Intro to Affiliate Marketing'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/sway-social.jpg" alt="" decoding="async">
+          <b>16</b>
+          <span class="jb-text"><i>Sway Social</i><strong>Intro to Affiliate</strong><strong>Marketing</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Abby Siler 'I'm Gonna Be Okay'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/gonna-be-okay.jpg" alt="" decoding="async">
+          <b>17</b>
+          <span class="jb-text"><i>Abby Siler</i><strong>I'm Gonna Be Okay</strong></span>
+        </span>
+      </button>
+      <button type="button" class="jb-spine" aria-label="Drew Elliott 'CANYOUFEELIT'">
+        <span class="jb-plate">
+          <img src="assets/thumbs/canyoufeelit.jpg" alt="" decoding="async">
+          <b>18</b>
+          <span class="jb-text"><i>Drew Elliott</i><strong>CANYOUFEELIT</strong></span>
+        </span>
       </button>
     </div>
-    <div class="pointer-events-auto flex gap-6">
-      <a class="text-white/40 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Instagram</a>
-      <a class="text-white/40 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Behance</a>
-      <a class="text-white/40 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-bold" href="#">Twitter</a>
-    </div>
-  </footer>
+  </div>
+  <div class="jb-now" aria-live="polite">
+    <span class="tiny jb-meta"></span>
+    <h2 class="jb-title"></h2>
+  </div>
+</div>
+</section>
 
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
-    menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
-    closeMenu.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-  </script>
+<section class="index">
+  <h2 class="tiny">Index</h2>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button type="button" data-filter="All" class="on" aria-pressed="true">All</button>
+    <button type="button" data-filter="Music Videos" aria-pressed="false">Music Videos</button>
+    <button type="button" data-filter="Live" aria-pressed="false">Live</button>
+    <button type="button" data-filter="Documentary" aria-pressed="false">Documentary</button>
+    <button type="button" data-filter="Commercial" aria-pressed="false">Commercial</button>
+  </div>
+  <ol>
+    <li class="reveal" data-group="Live"><a href="work/greyhouse.html"><span>(01)</span><strong>Edgehill, Live from the Greyhouse</strong><em>Live</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/therapy.html"><span>(02)</span><strong>Mitchell Tenpenny, Therapy</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/mccoy-moore.html"><span>(03)</span><strong>McCoy Moore, Forget We Ever Met</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/dogpark-famous.html"><span>(04)</span><strong>Dogpark, I Wanna Be Famous</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Documentary"><a href="work/movie-changed-everything.html"><span>(05)</span><strong>The Movie That Changed Everything</strong><em>Documentary</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/to-each-their-own.html"><span>(06)</span><strong>Colby!, To Each Their Own</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/meeks-carter.html"><span>(07)</span><strong>Meeks Carter, Something to Believe In</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Live"><a href="work/dogpark-cako.html"><span>(08)</span><strong>Dogpark, Live from Cako Studios</strong><em>Live</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/stephen-stanley.html"><span>(09)</span><strong>Stephen Stanley, Never Mine</strong><em>Lyric Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/stephen-stanley-change.html"><span>(10)</span><strong>Stephen Stanley, Change</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/desperate.html"><span>(11)</span><strong>Jamie MacDonald, Desperate</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/its-on-me.html"><span>(12)</span><strong>Ashley Walls &amp; Struggle Jennings, It's on Me</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/sinner.html"><span>(13)</span><strong>Shaya Zamora, Sinner</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/american-spirit.html"><span>(14)</span><strong>John Louis, American Spirit</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Commercial"><a href="work/flatiron-health.html"><span>(15)</span><strong>BBC StoryWorks, Flatiron Health</strong><em>Commercial</em></a></li>
+    <li class="reveal" data-group="Commercial"><a href="work/sway-social.html"><span>(16)</span><strong>Sway Social, Intro to Affiliate Marketing</strong><em>Commercial</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/gonna-be-okay.html"><span>(17)</span><strong>Abby Siler, I'm Gonna Be Okay</strong><em>Music Video</em></a></li>
+    <li class="reveal" data-group="Music Videos"><a href="work/canyoufeelit.html"><span>(18)</span><strong>Drew Elliott, CANYOUFEELIT</strong><em>Lyric Video</em></a></li>
+  </ol>
+</section>
+</main>
+<footer class="site-foot">
+  <a href="index.html" class="foot-mark" aria-label="Ouch Pictures, home"><img src="Ouchpictures_white.png" alt="Ouch!"></a>
+  <div class="foot-row">
+    <span>Ouch Pictures</span>
+    <a href="https://instagram.com/tyccombs" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@tyccombs" target="_blank" rel="noopener">YouTube</a>
+    <a href="contact.html">Contact</a>
+    <span>&copy; 2026</span>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/jukebox.js"></script>
 </body>
 </html>

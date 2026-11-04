@@ -1,4 +1,31 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/project-nexus",
+      "destination": "/work/greyhouse",
+      "permanent": true
+    },
+    {
+      "source": "/project-aether",
+      "destination": "/work/therapy",
+      "permanent": true
+    },
+    {
+      "source": "/project-vortex",
+      "destination": "/work/movie-changed-everything",
+      "permanent": true
+    },
+    {
+      "source": "/sessions",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/project-phoenix",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
 }

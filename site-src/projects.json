@@ -1,0 +1,447 @@
+[
+  {
+    "slug": "greyhouse",
+    "artist": "Edgehill",
+    "title": "Live from the Greyhouse",
+    "type": "Live",
+    "youtube": "UsTn8sVPWwA",
+    "credits": [
+      [
+        "Directed and produced by",
+        "Ty Combs"
+      ],
+      [
+        "Director of photography",
+        "Mitchell Schleper"
+      ],
+      [
+        "Label",
+        "Big Loud Rock"
+      ]
+    ],
+    "oldPage": "project-nexus",
+    "stills": [
+      "greyhouse-1.jpg",
+      "greyhouse-2.jpg",
+      "greyhouse-3.jpg",
+      "greyhouse-4.jpg",
+      "greyhouse-5.jpg",
+      "greyhouse-6.jpg"
+    ],
+    "noEmbed": true,
+    "clip": "greyhouse.mp4"
+  },
+  {
+    "slug": "therapy",
+    "artist": "Mitchell Tenpenny",
+    "title": "Therapy",
+    "type": "Music Video",
+    "youtube": "PZs_NpB9YrM",
+    "credits": [
+      [
+        "Directed by",
+        "Ty Combs"
+      ],
+      [
+        "Director of photography",
+        "Mitchell Schleper"
+      ],
+      [
+        "Produced by",
+        "Josh Barry, Ty Combs"
+      ],
+      [
+        "Label",
+        "Sony Music"
+      ]
+    ],
+    "oldPage": "project-aether",
+    "stills": [
+      "therapy-1.jpg",
+      "therapy-2.jpg",
+      "therapy-3.jpg",
+      "therapy-4.jpg",
+      "therapy-5.jpg",
+      "therapy-6.jpg"
+    ],
+    "noEmbed": true,
+    "clip": "therapy.mp4"
+  },
+  {
+    "slug": "mccoy-moore",
+    "artist": "McCoy Moore",
+    "title": "Forget We Ever Met",
+    "type": "Music Video",
+    "youtube": "FNFmPXnuI8w",
+    "credits": [],
+    "stills": [],
+    "noEmbed": true,
+    "clip": "mccoy-moore.mp4"
+  },
+  {
+    "slug": "dogpark-famous",
+    "artist": "Dogpark",
+    "title": "I Wanna Be Famous",
+    "type": "Music Video",
+    "youtube": "EMetecrFakM",
+    "credits": [],
+    "confirm": "Matched 'IWBF' in Notion",
+    "stills": [],
+    "clip": "dogpark-famous.mp4"
+  },
+  {
+    "slug": "movie-changed-everything",
+    "title": "The Movie That Changed Everything",
+    "type": "Documentary",
+    "youtube": "MJkRXVPA36g",
+    "clip": "movie-changed-everything.mp4",
+    "note": "A short documentary I made in my house about why I got into filmmaking. I made it because I needed a vlog for my (at the time) daily YouTube channel, submitted it on a whim to an online film festival, and it was chosen as one of the 10 finalists shown.",
+    "credits": [
+      [
+        "Directed by",
+        "Ty Combs"
+      ],
+      [
+        "Cinematography",
+        "Ty Combs"
+      ],
+      [
+        "Selection",
+        "Dance of Cinema Film Festival, 2024"
+      ]
+    ],
+    "oldPage": "project-vortex",
+    "stills": [
+      "movie-changed-everything-1.jpg",
+      "movie-changed-everything-2.jpg",
+      "movie-changed-everything-3.jpg",
+      "movie-changed-everything-4.jpg",
+      "movie-changed-everything-5.jpg",
+      "movie-changed-everything-6.jpg"
+    ]
+  },
+  {
+    "slug": "to-each-their-own",
+    "artist": "Colby!",
+    "title": "To Each Their Own",
+    "type": "Music Video",
+    "youtube": "TjcYtJiIcVw",
+    "credits": [
+      [
+        "Directed and produced by",
+        "Ty Combs"
+      ],
+      [
+        "Director of photography",
+        "Mitchell Schleper"
+      ],
+      [
+        "On-set stills",
+        "Gina Di Maio"
+      ],
+      [
+        "Management",
+        "Hyphen Media Group"
+      ],
+      [
+        "Label",
+        "Sony Music"
+      ]
+    ],
+    "stills": [
+      "to-each-their-own-1.jpg",
+      "to-each-their-own-2.jpg",
+      "to-each-their-own-3.jpg",
+      "to-each-their-own-4.jpg",
+      "to-each-their-own-5.jpg",
+      "to-each-their-own-6.jpg"
+    ],
+    "noEmbed": true
+  },
+  {
+    "slug": "meeks-carter",
+    "artist": "Meeks Carter",
+    "title": "Something to Believe In",
+    "type": "Music Video",
+    "youtube": "ErfjRP0J_jU",
+    "credits": [],
+    "stills": [],
+    "noEmbed": true,
+    "clip": "meeks-carter.mp4"
+  },
+  {
+    "slug": "dogpark-cako",
+    "artist": "Dogpark",
+    "title": "Live from Cako Studios",
+    "type": "Live",
+    "youtube": "hbU691CBl20",
+    "credits": [],
+    "stills": [],
+    "noEmbed": true,
+    "clip": "dogpark-cako.mp4"
+  },
+  {
+    "slug": "stephen-stanley",
+    "artist": "Stephen Stanley",
+    "title": "Never Mine",
+    "type": "Lyric Video",
+    "youtube": "EmeGn3NI2Uo",
+    "credits": [],
+    "stills": [],
+    "noEmbed": true,
+    "clip": "stephen-stanley.mp4"
+  },
+  {
+    "slug": "stephen-stanley-change",
+    "artist": "Stephen Stanley",
+    "title": "Change",
+    "type": "Music Video",
+    "youtube": "i950RSL5cjY",
+    "clip": "stephen-stanley-change.mp4",
+    "credits": [],
+    "stills": [],
+    "noEmbed": true
+  },
+  {
+    "slug": "desperate",
+    "artist": "Jamie MacDonald",
+    "title": "Desperate",
+    "type": "Music Video",
+    "youtube": "aE63arP4vDY",
+    "credits": [
+      [
+        "Directed by",
+        "Ty Combs"
+      ],
+      [
+        "Produced by",
+        "Ty Combs, Paul Rivera, Aaron Stearns"
+      ],
+      [
+        "Director of photography",
+        "Ty Combs"
+      ],
+      [
+        "Camera operators",
+        "Paul Rivera, Justin Green"
+      ]
+    ],
+    "stills": [
+      "desperate-1.jpg",
+      "desperate-2.jpg",
+      "desperate-3.jpg",
+      "desperate-4.jpg",
+      "desperate-5.jpg"
+    ],
+    "noEmbed": true
+  },
+  {
+    "slug": "its-on-me",
+    "artist": "Ashley Walls & Struggle Jennings",
+    "title": "It's on Me",
+    "type": "Music Video",
+    "youtube": "vw8cGrpXWU4",
+    "credits": [
+      [
+        "Directed and shot by",
+        "Ty Combs"
+      ],
+      [
+        "Produced by",
+        "Ty Combs, Ashley Walls"
+      ]
+    ],
+    "stills": [
+      "its-on-me-1.jpg",
+      "its-on-me-2.jpg",
+      "its-on-me-3.jpg",
+      "its-on-me-4.jpg",
+      "its-on-me-5.jpg",
+      "its-on-me-6.jpg"
+    ]
+  },
+  {
+    "slug": "sinner",
+    "artist": "Shaya Zamora",
+    "title": "Sinner",
+    "type": "Music Video",
+    "youtube": "D0I9dGO_J0k",
+    "credits": [
+      [
+        "Directed and produced by",
+        "Ty Combs"
+      ],
+      [
+        "Director of photography",
+        "Mitchell Schleper"
+      ],
+      [
+        "Costuming",
+        "Meleah Honeycutt"
+      ],
+      [
+        "Management",
+        "Hyphen Media Group"
+      ],
+      [
+        "Label",
+        "Atlantic Records"
+      ]
+    ],
+    "stills": [
+      "sinner-1.jpg",
+      "sinner-2.jpg",
+      "sinner-3.jpg",
+      "sinner-4.jpg",
+      "sinner-5.jpg",
+      "sinner-6.jpg"
+    ],
+    "noEmbed": true
+  },
+  {
+    "slug": "american-spirit",
+    "artist": "John Louis",
+    "title": "American Spirit",
+    "type": "Music Video",
+    "youtube": "0_pIUqiXKaQ",
+    "credits": [
+      [
+        "Directed by",
+        "Ty Combs, Benjamin Mariano"
+      ],
+      [
+        "Director of photography",
+        "Ty Combs"
+      ],
+      [
+        "Editor",
+        "Benjamin Mariano"
+      ],
+      [
+        "Colorist",
+        "Ty Combs"
+      ],
+      [
+        "Lighting director",
+        "Santiago Torres"
+      ],
+      [
+        "Label",
+        "Despicable Records"
+      ]
+    ],
+    "stills": [
+      "american-spirit-1.jpg",
+      "american-spirit-2.jpg",
+      "american-spirit-3.jpg",
+      "american-spirit-4.jpg",
+      "american-spirit-5.jpg",
+      "american-spirit-6.jpg"
+    ]
+  },
+  {
+    "slug": "flatiron-health",
+    "artist": "BBC StoryWorks",
+    "title": "Flatiron Health",
+    "type": "Commercial",
+    "credits": [
+      [
+        "Directed by",
+        "Ty Combs"
+      ],
+      [
+        "Editor",
+        "Ty Combs"
+      ],
+      [
+        "Produced by",
+        "Goodfellow Productions for BBC StoryWorks and Flatiron Health"
+      ]
+    ],
+    "link": [
+      "Watch on BBC StoryWorks",
+      "https://www.bbc.com/storyworks/natures-building-blocks-2/flatiron-artificial-intelligence-data-for-cancer-care"
+    ],
+    "stills": [
+      "flatiron-health-1.jpg",
+      "flatiron-health-2.jpg",
+      "flatiron-health-3.jpg",
+      "flatiron-health-4.jpg"
+    ]
+  },
+  {
+    "slug": "sway-social",
+    "artist": "Sway Social",
+    "title": "Intro to Affiliate Marketing",
+    "type": "Commercial",
+    "clip": "sway-social.mp4",
+    "note": "A 9-part course created to help influencers grow their affiliate earnings.",
+    "credits": [
+      [
+        "Directed by",
+        "Ty Combs"
+      ],
+      [
+        "Written by",
+        "Monica Combs"
+      ],
+      [
+        "Produced by",
+        "Sway Social"
+      ]
+    ],
+    "link": [
+      "See the course",
+      "https://theswaysocial.com/sway-social-academy"
+    ],
+    "stills": [
+      "sway-social-1.jpg",
+      "sway-social-2.jpg"
+    ]
+  },
+  {
+    "slug": "gonna-be-okay",
+    "artist": "Abby Siler",
+    "title": "I'm Gonna Be Okay",
+    "type": "Music Video",
+    "youtube": "0S372cRldEA",
+    "credits": [
+      [
+        "Directed by",
+        "Ty Combs"
+      ],
+      [
+        "Director of photography",
+        "Mitchell Schleper"
+      ],
+      [
+        "Produced by",
+        "Ryan Smith, Ross King, Ty Combs"
+      ]
+    ],
+    "stills": [
+      "gonna-be-okay-1.jpg",
+      "gonna-be-okay-2.jpg",
+      "gonna-be-okay-3.jpg",
+      "gonna-be-okay-4.jpg",
+      "gonna-be-okay-5.jpg",
+      "gonna-be-okay-6.jpg"
+    ],
+    "noEmbed": true
+  },
+  {
+    "slug": "canyoufeelit",
+    "artist": "Drew Elliott",
+    "title": "CANYOUFEELIT",
+    "type": "Lyric Video",
+    "youtube": "7OM40l67wYw",
+    "note": "Drew is one of my most frequent collaborators. He wanted a form of controlled chaos to encapsulate the song, so I used footage of Drew, 3D art created in Blender, an old analog TV, and heavy textures and lyrics.",
+    "credits": [],
+    "stills": [
+      "canyoufeelit-1.jpg",
+      "canyoufeelit-2.jpg",
+      "canyoufeelit-3.jpg",
+      "canyoufeelit-4.jpg"
+    ]
+  }
+]

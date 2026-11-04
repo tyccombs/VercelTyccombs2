@@ -1,124 +1,40 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Studio — Contact</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: { "primary": "#171819", "background-light": "#efefef", "background-dark": "#171819" },
-        fontFamily: { "display": ["Work Sans"] },
-        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-      },
-    },
-  }
-</script>
-<style>
-body { font-family: "Work Sans", sans-serif; }
-h1, h2, h3 { font-family: "Archivo Black", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; text-transform: uppercase; }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Ouch Pictures</title>
+<meta name="description" content="Get in touch with Ouch Pictures.">
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
-<!-- Fixed Navigation -->
-  <header class="fixed top-0 left-0 w-full z-[70] flex items-center justify-between px-6 md:px-12 py-6 mix-blend-difference">
-    <a href="index.html" class="flex items-center gap-2">
-      <img src="Ouchpictures_white.png" alt="Ouch Pictures" class="h-8 w-auto"/>
-    </a>
-    <nav class="hidden md:flex items-center gap-12">
-      <a class="text-white hover:opacity-60 transition-opacity tracking-[0.4em] text-[10px] font-medium uppercase" href="index.html">Work</a>
-      <a class="text-white hover:opacity-60 transition-opacity tracking-[0.4em] text-[10px] font-medium uppercase" href="about.html">Studio</a>
-      <a class="text-white hover:opacity-60 transition-opacity tracking-[0.4em] text-[10px] font-medium uppercase" href="contact.html">Contact</a>
-    </nav>
-    <div class="flex items-center gap-4">
-      <button id="menu-btn" class="bg-white/10 backdrop-blur-md p-2 rounded-full text-white hover:bg-white/20 transition-all">
-        <span class="material-symbols-outlined text-xl">menu</span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-0 z-[75] bg-black/95 backdrop-blur-lg flex flex-col items-center justify-center gap-10 hidden">
-    <button id="close-menu" class="absolute top-6 right-6 text-white/60 hover:text-white">
-      <span class="material-symbols-outlined text-3xl">close</span>
-    </button>
-    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:opacity-60 transition-opacity" href="index.html">Work</a>
-    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:opacity-60 transition-opacity" href="about.html">Studio</a>
-    <a class="text-white text-3xl font-bold tracking-[0.3em] uppercase hover:opacity-60 transition-opacity" href="contact.html">Contact</a>
-  </div>
-
-<main class="max-w-5xl mx-auto px-6 md:px-20 py-24">
-  <div class="grid md:grid-cols-2 gap-20">
-    <div>
-      <span class="text-slate-400 font-semibold tracking-widest uppercase text-xs">Get In Touch</span>
-      <h1 class="text-5xl md:text-7xl tracking-tighter mt-4 mb-8 leading-none">Let's make something.</h1>
-      <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-12">We take on a limited number of projects each year. If you have something in mind — reach out early.</p>
-      <div class="space-y-6">
-        <div>
-          <p class="text-slate-500 dark:text-slate-400 uppercase tracking-widest text-xs font-bold mb-1">Email</p>
-          <a href="mailto:hello@studio.film" class="text-xl font-medium hover:opacity-60 transition-opacity">hello@studio.film</a>
-        </div>
-        <div>
-          <p class="text-slate-500 dark:text-slate-400 uppercase tracking-widest text-xs font-bold mb-1">Based In</p>
-          <p class="text-xl font-medium">Los Angeles / Berlin</p>
-        </div>
-        <div class="flex gap-6 pt-4">
-          <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors font-medium" href="#">Instagram</a>
-          <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors font-medium" href="#">Behance</a>
-          <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors font-medium" href="#">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex flex-col gap-6">
-      <div class="flex flex-col gap-2">
-        <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Your Name</label>
-        <input type="text" placeholder="Jane Smith" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-slate-400 transition-colors"/>
-      </div>
-      <div class="flex flex-col gap-2">
-        <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Email</label>
-        <input type="email" placeholder="jane@example.com" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-slate-400 transition-colors"/>
-      </div>
-      <div class="flex flex-col gap-2">
-        <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Project Type</label>
-        <select class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-slate-400 transition-colors">
-          <option>Short Film</option>
-          <option>Music Video</option>
-          <option>Commercial</option>
-          <option>Documentary</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="flex flex-col gap-2">
-        <label class="text-xs uppercase tracking-widest font-bold text-slate-500 dark:text-slate-400">Message</label>
-        <textarea rows="5" placeholder="Tell us about your project..." class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-slate-400 transition-colors resize-none"></textarea>
-      </div>
-      <button class="flex items-center justify-center gap-3 bg-[#efefef] text-[#171819] py-4 px-8 rounded-full font-bold hover:scale-105 transition-transform">
-        Send Message
-        <span class="material-symbols-outlined">send</span>
-      </button>
-    </div>
-  </div>
+<body class="plain">
+<header class="site-head">
+  <a href="index.html" class="site-logo" aria-label="Ouch Pictures, home"><img src="Ouchpictures_white.png" alt="Ouch!"></a>
+  <nav>
+    <a href="index.html#work">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main class="plain-main">
+  <h1>Contact</h1>
+  <ol class="links">
+    <li><a href="https://www.tyccombs.com/hire-me" target="_blank" rel="noopener"><span>(01)</span><strong>Work with me</strong></a></li>
+    <li><a href="https://instagram.com/tyccombs" target="_blank" rel="noopener"><span>(02)</span><strong>Instagram</strong></a></li>
+    <li><a href="https://www.youtube.com/@tyccombs" target="_blank" rel="noopener"><span>(03)</span><strong>YouTube</strong></a></li>
+    <li><a href="https://www.tiktok.com/@tyccombs.mp4" target="_blank" rel="noopener"><span>(04)</span><strong>TikTok</strong></a></li>
+  </ol>
 </main>
-
-<footer class="px-6 md:px-20 py-12 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
-  <span class="text-slate-500 dark:text-slate-400 text-sm">© 2024 Portfolio Studio.</span>
-  <div class="flex gap-6">
-    <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors text-sm" href="#">Instagram</a>
-    <a class="text-slate-500 dark:text-slate-400 hover:text-white transition-colors text-sm" href="#">Behance</a>
+<footer class="site-foot">
+  <a href="index.html" class="foot-mark" aria-label="Ouch Pictures, home"><img src="Ouchpictures_white.png" alt="Ouch!"></a>
+  <div class="foot-row">
+    <span>Ouch Pictures</span>
+    <a href="https://instagram.com/tyccombs" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@tyccombs" target="_blank" rel="noopener">YouTube</a>
+    <a href="contact.html">Contact</a>
+    <span>&copy; 2026</span>
   </div>
 </footer>
-<script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
-    menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
-    closeMenu.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-  </script>
+<script src="assets/site.js"></script>
 </body>
 </html>
