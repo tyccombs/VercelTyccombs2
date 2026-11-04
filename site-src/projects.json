@@ -28,7 +28,6 @@
       "greyhouse-5.jpg",
       "greyhouse-6.jpg"
     ],
-    "noEmbed": true,
     "clip": "greyhouse.mp4"
   },
   {
@@ -64,7 +63,6 @@
       "therapy-5.jpg",
       "therapy-6.jpg"
     ],
-    "noEmbed": true,
     "clip": "therapy.mp4"
   },
   {
@@ -75,7 +73,6 @@
     "youtube": "FNFmPXnuI8w",
     "credits": [],
     "stills": [],
-    "noEmbed": true,
     "clip": "mccoy-moore.mp4"
   },
   {
@@ -156,7 +153,6 @@
       "to-each-their-own-5.jpg",
       "to-each-their-own-6.jpg"
     ],
-    "noEmbed": true,
     "clip": "to-each-their-own.mp4",
     "clipFromStills": true
   },
@@ -168,7 +164,6 @@
     "youtube": "ErfjRP0J_jU",
     "credits": [],
     "stills": [],
-    "noEmbed": true,
     "clip": "meeks-carter.mp4"
   },
   {
@@ -179,7 +174,6 @@
     "youtube": "hbU691CBl20",
     "credits": [],
     "stills": [],
-    "noEmbed": true,
     "clip": "dogpark-cako.mp4"
   },
   {
@@ -190,7 +184,6 @@
     "youtube": "EmeGn3NI2Uo",
     "credits": [],
     "stills": [],
-    "noEmbed": true,
     "clip": "stephen-stanley.mp4"
   },
   {
@@ -201,8 +194,7 @@
     "youtube": "i950RSL5cjY",
     "clip": "stephen-stanley-change.mp4",
     "credits": [],
-    "stills": [],
-    "noEmbed": true
+    "stills": []
   },
   {
     "slug": "desperate",
@@ -235,7 +227,6 @@
       "desperate-4.jpg",
       "desperate-5.jpg"
     ],
-    "noEmbed": true,
     "clip": "desperate.mp4",
     "clipFromStills": true
   },
@@ -302,7 +293,6 @@
       "sinner-5.jpg",
       "sinner-6.jpg"
     ],
-    "noEmbed": true,
     "clip": "sinner.mp4",
     "clipFromStills": true
   },
@@ -439,7 +429,6 @@
       "gonna-be-okay-5.jpg",
       "gonna-be-okay-6.jpg"
     ],
-    "noEmbed": true,
     "clip": "gonna-be-okay.mp4",
     "clipFromStills": true
   },
