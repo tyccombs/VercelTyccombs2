@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hire Me | Ouch Pictures</title>
+<meta name="description" content="Tell Ty Combs about yourself and your project.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="plain">
+<header class="site-head">
+  <a href="index.html" class="site-logo" aria-label="Ouch Pictures, home"><img src="Ouchpictures_white.png" alt="Ouch!"></a>
+  <nav>
+    <a href="index.html#work">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main class="plain-main">
+  <h1>Let's work together</h1>
+  <div class="split">
+    <span class="tiny">Hire me</span>
+    <p class="lead">I'm so glad you want me to be a part of your project! First things first: tell me about yourself, and your project. Spare no detail.</p>
+  </div>
+  <form class="hire" action="/api/hire" method="post" novalidate>
+    <ol>
+      <li class="hf">
+        <span class="hf-n">(01)</span>
+        <div class="hf-q">
+          <span class="hf-label" id="l-name">Your name <em>*</em></span>
+          <span class="hf-hint">What should I call you?</span>
+        </div>
+        <div class="hf-a"><div class="hf-pair"><input name="first" autocomplete="given-name" placeholder="First" required aria-label="First name"><input name="last" autocomplete="family-name" placeholder="Last" required aria-label="Last name"></div></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(02)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-company">Artist / company name</label>
+          
+        </div>
+        <div class="hf-a"><input id="f-company" name="company" autocomplete="organization"></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(03)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-email">Email <em>*</em></label>
+          
+        </div>
+        <div class="hf-a"><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(04)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-project">What's the project called?</label>
+          <span class="hf-hint">Song name or company name works too.</span>
+        </div>
+        <div class="hf-a"><input id="f-project" name="project"></div>
+      </li>
+      <li class="hf" role="group" aria-labelledby="l-types">
+        <span class="hf-n">(05)</span>
+        <div class="hf-q">
+          <span class="hf-label" id="l-types">What type of video or film are we making?</span>
+          
+        </div>
+        <div class="hf-a"><div class="hf-checks"><label><input type="checkbox" name="types" value="Music Video"><span>Music Video</span></label><label><input type="checkbox" name="types" value="Social Media Campaign"><span>Social Media Campaign</span></label><label><input type="checkbox" name="types" value="Commercial/Ad Campaign"><span>Commercial/Ad Campaign</span></label><label><input type="checkbox" name="types" value="Documentary/Narrative"><span>Documentary/Narrative</span></label></div></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(06)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-link">Link your song, script, treatment or any other important documents</label>
+          <span class="hf-hint">Don't worry, I won't share this anywhere. If you have multiple links, leave them in the last answer.</span>
+        </div>
+        <div class="hf-a"><input id="f-link" name="link" type="url" inputmode="url" placeholder="https://"></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(07)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-due">When is the due date for this?</label>
+          
+        </div>
+        <div class="hf-a"><input id="f-due" name="due" type="date"></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(08)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-goal">What is your goal for this project?</label>
+          <span class="hf-hint">Tonally, aesthetically, content-wise, etc.</span>
+        </div>
+        <div class="hf-a"><textarea id="f-goal" name="goal" rows="3"></textarea></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(09)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-budget">What is your budget for this?</label>
+          
+        </div>
+        <div class="hf-a"><div class="hf-money"><span>$</span><input id="f-budget" name="budget" inputmode="decimal"></div></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(10)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-references">Any references for this project?</label>
+          <span class="hf-hint">Feel free to leave links, and be as specific as possible.</span>
+        </div>
+        <div class="hf-a"><textarea id="f-references" name="references" rows="3"></textarea></div>
+      </li>
+      <li class="hf">
+        <span class="hf-n">(11)</span>
+        <div class="hf-q">
+          <label class="hf-label" for="f-other">Anything else you want to share?</label>
+          <span class="hf-hint">Project back story? Homework for me?</span>
+        </div>
+        <div class="hf-a"><textarea id="f-other" name="other" rows="3"></textarea></div>
+      </li>
+    </ol>
+    <div class="hf-trap" aria-hidden="true"><label>Leave this empty <input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <input type="hidden" name="t" value="">
+    <div class="hf-send">
+      <p class="hf-status" role="status" aria-live="polite"></p>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <div class="hire-done" hidden tabindex="-1">
+    <p class="lead">Thank you for taking the time to fill that out! I'll email you back soon with next steps.</p>
+  </div>
+</main>
+<footer class="site-foot">
+  <a href="index.html" class="foot-mark" aria-label="Ouch Pictures, home"><img src="Ouchpictures_white.png" alt="Ouch!"></a>
+  <div class="foot-row">
+    <span>Ouch Pictures</span>
+    <a href="https://instagram.com/tyccombs" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@tyccombs" target="_blank" rel="noopener">YouTube</a>
+    <a href="contact.html">Contact</a>
+    <span>&copy; 2026</span>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/hire.js"></script>
+</body>
+</html>

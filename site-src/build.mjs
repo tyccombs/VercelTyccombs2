@@ -186,9 +186,61 @@ const contact = page({
   body: `<main class="plain-main">
   <h1>Contact</h1>
   <ol class="links">
-${[['Work with me', 'https://www.tyccombs.com/hire-me'], ['Instagram', 'https://instagram.com/tyccombs'], ['YouTube', 'https://www.youtube.com/@tyccombs'], ['TikTok', 'https://www.tiktok.com/@tyccombs.mp4']]
-  .map(([t, u], i) => `    <li><a href="${u}" target="_blank" rel="noopener"><span>(${num(i)})</span><strong>${t}</strong></a></li>`).join('\n')}
+${[['Work with me', 'hire-me.html'], ['Instagram', 'https://instagram.com/tyccombs'], ['YouTube', 'https://www.youtube.com/@tyccombs'], ['TikTok', 'https://www.tiktok.com/@tyccombs.mp4']]
+  .map(([t, u], i) => `    <li><a href="${u}"${u.startsWith('http') ? ' target="_blank" rel="noopener"' : ''}><span>(${num(i)})</span><strong>${t}</strong></a></li>`).join('\n')}
   </ol>
+</main>`,
+});
+
+// Hire-me form, rebuilt from tyccombs.com/hire-me. Posts to /api/hire, which emails Ty.
+// Field names must match portfolio-site/api/hire.js.
+const HIRE_TYPES = ['Music Video', 'Social Media Campaign', 'Commercial/Ad Campaign', 'Documentary/Narrative'];
+const HIRE_FIELDS = [
+  { name: 'name', label: 'Your name', hint: 'What should I call you?', required: true, html: `<div class="hf-pair"><input name="first" autocomplete="given-name" placeholder="First" required aria-label="First name"><input name="last" autocomplete="family-name" placeholder="Last" required aria-label="Last name"></div>` },
+  { name: 'company', label: 'Artist / company name', html: `<input id="f-company" name="company" autocomplete="organization">` },
+  { name: 'email', label: 'Email', required: true, html: `<input id="f-email" name="email" type="email" autocomplete="email" required>` },
+  { name: 'project', label: "What's the project called?", hint: 'Song name or company name works too.', html: `<input id="f-project" name="project">` },
+  { name: 'types', label: 'What type of video or film are we making?', group: true, html: `<div class="hf-checks">${HIRE_TYPES.map((t) => `<label><input type="checkbox" name="types" value="${esc(t)}"><span>${esc(t)}</span></label>`).join('')}</div>` },
+  { name: 'link', label: 'Link your song, script, treatment or any other important documents', hint: "Don't worry, I won't share this anywhere. If you have multiple links, leave them in the last answer.", html: `<input id="f-link" name="link" type="url" inputmode="url" placeholder="https://">` },
+  { name: 'due', label: 'When is the due date for this?', html: `<input id="f-due" name="due" type="date">` },
+  { name: 'goal', label: 'What is your goal for this project?', hint: 'Tonally, aesthetically, content-wise, etc.', html: `<textarea id="f-goal" name="goal" rows="3"></textarea>` },
+  { name: 'budget', label: 'What is your budget for this?', html: `<div class="hf-money"><span>$</span><input id="f-budget" name="budget" inputmode="decimal"></div>` },
+  { name: 'references', label: 'Any references for this project?', hint: 'Feel free to leave links, and be as specific as possible.', html: `<textarea id="f-references" name="references" rows="3"></textarea>` },
+  { name: 'other', label: 'Anything else you want to share?', hint: 'Project back story? Homework for me?', html: `<textarea id="f-other" name="other" rows="3"></textarea>` },
+];
+
+const hire = page({
+  title: 'Hire Me | Ouch Pictures',
+  description: 'Tell Ty Combs about yourself and your project.',
+  bodyClass: 'plain',
+  script: '\n<script src="assets/hire.js"></script>',
+  body: `<main class="plain-main">
+  <h1>Let's work together</h1>
+  <div class="split">
+    <span class="tiny">Hire me</span>
+    <p class="lead">I'm so glad you want me to be a part of your project! First things first: tell me about yourself, and your project. Spare no detail.</p>
+  </div>
+  <form class="hire" action="/api/hire" method="post" novalidate>
+    <ol>
+${HIRE_FIELDS.map((f, i) => `      <li class="hf"${f.group ? ' role="group" aria-labelledby="l-' + f.name + '"' : ''}>
+        <span class="hf-n">(${num(i)})</span>
+        <div class="hf-q">
+          ${f.group || f.name === 'name' ? `<span class="hf-label" id="l-${f.name}">` : `<label class="hf-label" for="f-${f.name}">`}${esc(f.label)}${f.required ? ' <em>*</em>' : ''}${f.group || f.name === 'name' ? '</span>' : '</label>'}
+          ${f.hint ? `<span class="hf-hint">${esc(f.hint)}</span>` : ''}
+        </div>
+        <div class="hf-a">${f.html}</div>
+      </li>`).join('\n')}
+    </ol>
+    <div class="hf-trap" aria-hidden="true"><label>Leave this empty <input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <input type="hidden" name="t" value="">
+    <div class="hf-send">
+      <p class="hf-status" role="status" aria-live="polite"></p>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <div class="hire-done" hidden tabindex="-1">
+    <p class="lead">Thank you for taking the time to fill that out! I'll email you back soon with next steps.</p>
+  </div>
 </main>`,
 });
 
@@ -202,6 +254,7 @@ rmSync(join(out, 'work'), { recursive: true, force: true });
 write('index.html', home);
 write('about.html', about);
 write('contact.html', contact);
+write('hire-me.html', hire);
 projects.forEach((p, i) => write(`work/${p.slug}.html`, project(p, i)));
 
 // Old project URLs keep working.
