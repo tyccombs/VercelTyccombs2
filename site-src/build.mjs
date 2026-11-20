@@ -2,7 +2,7 @@
 // To add a project: add an entry to projects.json and a thumbnail at
 // portfolio-site/assets/thumbs/<slug>.jpg, then run this and commit the output.
 // To give a record a clip: put a short silent MP4 in assets/clips/ and set `clip`.
-// gear.html is hand-written and is not touched.
+// gear.html is not touched here: its gear list comes from the Obsidian "Gear List" note via site-src/build-gear.mjs.
 import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
